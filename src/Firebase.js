@@ -1,12 +1,12 @@
 import { initializeApp } from "firebase/app";
-
+import conf from './Conf/conf'
 const firebaseConfig = {
-  apiKey: "AIzaSyBAnxV3ObbWruPxRN_8g3PDaxLJasxTA_s",
-  authDomain: "chatapp-3254e.firebaseapp.com",
-  projectId: "chatapp-3254e",
-  storageBucket: "chatapp-3254e.appspot.com",
-  messagingSenderId: "273829081873",
-  appId: "1:273829081873:web:18f614ac7743b8d728d2b0"
+  apiKey: conf.apiKey,
+  authDomain: conf.authDomain,
+  projectId: conf.projectId,
+  storageBucket: conf.storageBucket,
+  messagingSenderId: conf.messagingSenderId,
+  appId: conf.appId
 };
 
 export const app = initializeApp(firebaseConfig);
